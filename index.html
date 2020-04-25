@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fa/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form">
+
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="johndoe" class="ref" id="username" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="john@gmail.com" class="ref" id="email" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Password" class="ref" id="password" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control">
+                <label>Re-enter Password </label>
+                <input type="password" placeholder="Password" class="ref" id="Re-enter Password" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <button class="unvalid">&#9888;</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
