@@ -10,4 +10,4 @@ Following input fields can validate
 - email
 - password
 - password check
-# instant-form-validation
+
