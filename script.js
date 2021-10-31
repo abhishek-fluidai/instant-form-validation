@@ -42,6 +42,23 @@ username.addEventListener('blur', e => {
 
 })
 
+   //define a date object variable that will take the current system date  
+   todaydate = new Date();  
+  
+   //find the year of the current date  
+    var oneJan =  new Date(todaydate.getFullYear(), 0, 1);   
+ 
+    // calculating number of days in given year before a given date   
+    var numberOfDays =  Math.floor((todaydate - oneJan) / (24 * 60 * 60 * 1000));   
+ 
+    // adding 1 since to current date and returns value starting from 0   
+    var result = Math.ceil(( todaydate.getDay() + 1 + numberOfDays) / 7);     
+
+    //display the calculated result         
+    document.write("Week Numbers of current date (" + todaydate +   
+    ") is: <br>" + result);  
+
+
 email.addEventListener('blur', (e) => {
     const emailValue = e.target.value
     // console.log(emailValue)
@@ -135,23 +152,23 @@ function grandV() {
 
 
 
-// function checkInputs() {
+function checkInputs() {
 
-//     //get values from inputs
-//     const usernameValue = username.value.trim();
-//     const emailValue = email.value.trim();
-//     const passwordValue = password.value.trim();
-//     const password2Value = password2.value.trim();
+    //get values from inputs
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
 
 
-//     if (usernameValue === '') {
-//         //show error & add error class
-//         setErrorFor(username, 'Username cannot be blank');
-//     }
-//     else {
-//         //add success class
-//         setSuccessFor(username);
-//     }
+    if (usernameValue === '') {
+        //show error & add error class
+        setErrorFor(username, 'Username cannot be blank');
+    }
+    else {
+        //add success class
+        setSuccessFor(username);
+    }
 
 
 
